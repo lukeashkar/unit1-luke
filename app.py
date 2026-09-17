@@ -71,16 +71,39 @@ t.speed(100000)
         t.forward(90)
         t.left(120)
 equal() """
-def square():
-    for i in range(6000):
+""" def square():
+    for i in range(60):
         for i in range(4):
             t.forward(200)
             t.left(90)
+        t.left(5) """
+"""     def addsquare(irange):
+        length=5
+        for i in range(irange):
+            square(length,5)
+            lenght+=5
+    addsquare() """
+
+""" def square():
+    length=5
+    for i in range(60):
+        for i in range(4):
+            t.forward(length)
+            t.left(90)
         t.left(5)
+        length+=5 """
 
 
-square()
-
+        
+def star():
+    length=5
+    for i in range(60):
+        for i in range(5):
+            t.forward(length)
+            t.left(144)
+        t.left(5)
+        length+=5
+star()
     
 
 turtle.done()
